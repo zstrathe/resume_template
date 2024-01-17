@@ -26,12 +26,19 @@
 % For mathematical symbols
 \usepackage{amsmath}
 
+% For hyperlinks
 \hypersetup{colorlinks,breaklinks,linkcolor=black,urlcolor=black,anchorcolor=black,citecolor=black}
 
+% disable word hyphenation (use \allowbreak before a word that stretches too long)
+\usepackage[none]{hyphenat}
+
+% add images
 \usepackage{graphicx}
 \graphicspath{ {./images/} }
 
+% set custom color for \ExternalLink icons
 \definecolor{custom_dark_blue}{RGB}{0, 0, 139}
+
 
 % Set applicant's personal data for header
 \name{Gayle L. McDowell}

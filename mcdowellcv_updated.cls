@@ -20,7 +20,7 @@
 %% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 %% SOFTWARE.
 
-\ProvidesClass{mcdowellcv}[2022/03/18 v1.2.0 McDowell CV class]
+\ProvidesClass{mcdowellcv_updated}[2022/03/18 v1.2.0 McDowell CV class]
 
 % Set up the fonts according to options
 \def\mainfontsize{11pt}
