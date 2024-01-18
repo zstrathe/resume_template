@@ -24,10 +24,10 @@
 
 % Set up the fonts according to options
 \def\mainfontsize{11pt}
-\def\mainfontface{Times New Roman}
+\def\mainfontface{FreeSerif} % free alternative for TimesNewRoman
 
 \DeclareOption{calibri}{%
-  \def\mainfontface{Calibri}
+  \def\mainfontface{Carlito} % free alternative for Calibri
 }
 
 % Set up papersize according to options, default to US letter
