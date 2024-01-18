@@ -5,14 +5,13 @@ jobs:
   build_latex:
     runs-on: ubuntu-latest
     steps:
-      - name: Install fonts
-        run: sudo apt-get -y install ttf-mscorefonts-installer
       - name: Set up Git repository
         uses: actions/checkout@v3
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
           root_file: CV_Template.tex
+          extra_system_packages: "msttcorefonts-installer"
           latexmk_use_lualatex: true
       - name: Upload PDF file
         uses: actions/upload-artifact@v3
