@@ -11,8 +11,8 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: CV_Template.tex
-          extra_system_packages: "msttcorefonts-installer"
-          pre_compile: "sudo update-ms-fonts && fc-cache -f"
+          extra_system_packages: "msttcorefonts-installer su-exec"
+          pre_compile: "su-exec update-ms-fonts && fc-cache -f"
           latexmk_use_lualatex: true
       - name: Upload PDF file
         uses: actions/upload-artifact@v3
