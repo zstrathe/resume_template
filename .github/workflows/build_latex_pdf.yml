@@ -11,7 +11,7 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: CV_Template.tex
-          latexmk_use_luatex: true
+          latexmk_use_lualatex: true
       - name: Upload PDF file
         uses: actions/upload-artifact@v3
         with:
