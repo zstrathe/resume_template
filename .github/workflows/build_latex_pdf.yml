@@ -12,7 +12,7 @@ jobs:
         with:
           root_file: CV_Template.tex
           extra_system_packages: "msttcorefonts-installer su-exec"
-          pre_compile: "su-exec update-ms-fonts && fc-cache -f"
+          pre_compile: "update-ms-fonts && fc-cache -f"
           latexmk_use_lualatex: true
       - name: Upload PDF file
         uses: actions/upload-artifact@v3
