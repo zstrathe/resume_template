@@ -13,9 +13,9 @@ jobs:
           root_file: CV_Template.tex
           latexmk_use_lualatex: true
 	  pre_compile: |
-            apk add msttcorefonts-installer fontconfig
-            update-ms-fonts
-            fc-cache -f
+              apk add msttcorefonts-installer fontconfig
+              update-ms-fonts
+              fc-cache -f
       - name: Upload PDF file
         uses: actions/upload-artifact@v3
         with:
